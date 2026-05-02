@@ -1,3 +1,18 @@
+.profile-img {
+    float: right;      /* La tira a la derecha */
+    width: 80px;       /* Tamaño de la foto */
+    height: 80px;
+    border-radius: 50%; /* La hace circular */
+    border: 2px solid #4ec9b0; /* Le da un borde del color de tu código */
+}
+
+/* Para limpiar el float y que no se desacomode el título */
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* Configuración general */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -83,4 +98,13 @@ nav a {
 nav a:hover {
     color: #fff;
     text-decoration: underline; /* Agrega un subrayado al pasar el mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    font-size: 0.9em;
+    color: #888;
 }
