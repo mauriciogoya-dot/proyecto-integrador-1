@@ -24,6 +24,9 @@ h2 {
     border-left: 4px solid #ce9178;
     padding-left: 10px;
 }
+h3 {
+    color: #569cd6; /* Un color celeste suave */
+}
 
 /* Secciones y Listas */
 section {
@@ -49,4 +52,26 @@ code {
     padding: 2px 6px;
     border-radius: 4px;
     font-family: 'Consolas', monospace;
+}
+nav {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex; /* Pone los elementos uno al lado del otro */
+    gap: 20px;
+    margin: 0;
+}
+
+nav a {
+    color: #4ec9b0;
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fff; /* Cambia de color cuando pasas el mouse */
 }
