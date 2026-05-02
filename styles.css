@@ -75,3 +75,12 @@ nav a {
 nav a:hover {
     color: #fff; /* Cambia de color cuando pasas el mouse */
 }
+
+nav a {
+    transition: color 0.3s ease; /* Hace que el cambio de color sea suave */
+}
+
+nav a:hover {
+    color: #fff;
+    text-decoration: underline; /* Agrega un subrayado al pasar el mouse */
+}
