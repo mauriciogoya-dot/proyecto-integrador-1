@@ -1,0 +1,52 @@
+/* Configuración general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e; /* Fondo oscuro */
+    color: #d4d4d4;           /* Texto gris claro */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    border-bottom: 2px solid #333;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    color: #4ec9b0; /* Color turquesa tipo código */
+}
+
+h2 {
+    color: #ce9178; /* Color naranja suave */
+    border-left: 4px solid #ce9178;
+    padding-left: 10px;
+}
+
+/* Secciones y Listas */
+section {
+    background-color: #252526;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para los comandos */
+code {
+    background-color: #000;
+    color: #b5cea8; /* Verde clarito */
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Consolas', monospace;
+}
