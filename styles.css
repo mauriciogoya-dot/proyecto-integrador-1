@@ -2,7 +2,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start; /* Alinea arriba para que el título no suba y baje */
+    align-items: flex-start;
+    /* Alinea arriba para que el título no suba y baje */
     border-bottom: 2px solid #333;
     padding-bottom: 20px;
     margin-bottom: 30px;
@@ -17,7 +18,8 @@ header {
 /* La tarjeta de la derecha */
 .user-card {
     display: flex;
-    align-items: center; /* Alinea los links con el centro de la foto */
+    align-items: center;
+    /* Alinea los links con el centro de la foto */
     gap: 15px;
 }
 
@@ -38,7 +40,8 @@ header {
 .user-data {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra el nombre bajo la foto */
+    align-items: center;
+    /* Centra el nombre bajo la foto */
 }
 
 .profile-img {
@@ -46,20 +49,25 @@ header {
     height: 100px;
     border-radius: 50%;
     border: 3px solid #4ec9b0;
-    margin-bottom: 5px; /* Espacio entre foto y nombre */
+    margin-bottom: 5px;
+    /* Espacio entre foto y nombre */
 }
 
 .user-name {
     font-weight: bold;
     font-size: 0.9em;
     color: #fff;
-    white-space: nowrap; /* Evita que el nombre se parta en dos líneas */
+    white-space: nowrap;
+    /* Evita que el nombre se parta en dos líneas */
 }
+
 /* Configuración general */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1e1e1e; /* Fondo oscuro */
-    color: #d4d4d4;           /* Texto gris claro */
+    background-color: #1e1e1e;
+    /* Fondo oscuro */
+    color: #d4d4d4;
+    /* Texto gris claro */
     line-height: 1.6;
     margin: 0;
     padding: 20px;
@@ -67,16 +75,20 @@ body {
 
 /* Encabezado */
 h1 {
-    color: #4ec9b0; /* Color turquesa tipo código */
+    color: #4ec9b0;
+    /* Color turquesa tipo código */
 }
 
 h2 {
-    color: #ce9178; /* Color naranja suave */
+    color: #ce9178;
+    /* Color naranja suave */
     border-left: 4px solid #ce9178;
     padding-left: 10px;
 }
+
 h3 {
-    color: #569cd6; /* Un color celeste suave */
+    color: #569cd6;
+    /* Un color celeste suave */
 }
 
 /* Secciones y Listas */
@@ -99,11 +111,13 @@ li {
 /* Estilo para los comandos */
 code {
     background-color: #000;
-    color: #b5cea8; /* Verde clarito */
+    color: #b5cea8;
+    /* Verde clarito */
     padding: 2px 6px;
     border-radius: 4px;
     font-family: 'Consolas', monospace;
 }
+
 nav {
     width: 100%;
     background-color: #333;
@@ -114,7 +128,8 @@ nav {
 }
 
 nav ul {
-    display: flex; /* Pone los elementos uno al lado del otro */
+    display: flex;
+    /* Pone los elementos uno al lado del otro */
     gap: 20px;
     margin: 0;
     justify-content: flex-start;
@@ -122,21 +137,56 @@ nav ul {
 
 nav a {
     color: #4ec9b0;
-    text-decoration: none; /* Quita el subrayado */
+    text-decoration: none;
+    /* Quita el subrayado */
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #fff; /* Cambia de color cuando pasas el mouse */
+    color: #fff;
+    /* Cambia de color cuando pasas el mouse */
 }
 
 nav a {
-    transition: color 0.3s ease; /* Hace que el cambio de color sea suave */
+    transition: color 0.3s ease;
+    /* Hace que el cambio de color sea suave */
 }
 
 nav a:hover {
     color: #fff;
-    text-decoration: underline; /* Agrega un subrayado al pasar el mouse */
+    text-decoration: underline;
+    /* Agrega un subrayado al pasar el mouse */
+}
+
+/* Estilo base para tus enlaces de navegación */
+nav ul li a {
+    color: #48a9a6;
+    /* El verde base que ya vienes usando */
+    text-decoration: none;
+    font-weight: normal;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+/* Estilo para la clase ACTIVE (la página donde estás) */
+nav ul li a.active {
+    color: #ffffff;
+    /* Texto blanco para que resalte */
+    background-color: #48a9a6;
+    /* Fondo verde (el mismo de tus enlaces) */
+    border-radius: 4px;
+    /* Bordes redondeados sutiles */
+    font-weight: bold;
+    /* Texto un poco más grueso */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Una sombra pequeña para dar profundidad */
+}
+
+/* Efecto opcional: cuando pasas el mouse (hover) por los que NO están activos */
+nav ul li a:hover:not(.active) {
+    color: #2e6b69;
+    /* Un verde más oscuro al pasar el mouse */
+    border-bottom: 2px solid #48a9a6;
 }
 
 footer {
