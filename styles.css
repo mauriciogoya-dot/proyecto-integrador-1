@@ -197,3 +197,13 @@ footer {
     font-size: 0.9em;
     color: #888;
 }
+/* Estilo para las imágenes de las secciones */
+.section-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto; /* Centrada con espacio arriba y abajo */
+    border-radius: 8px;
+    border: 1px solid #444;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
