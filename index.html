@@ -34,6 +34,10 @@
                 <li><a href="git.html">Git</a></li>
                 <li><a href="html.html">HTML</a></li>
                 <li><a href="software.html">Software</a></li>
+                <!-- Este nuevo link apunta al ID "contacto" -->
+                <li style="margin-left: auto;"><a href="#contacto">Contacto</a></li>
+                <!--Nota: El style="margin-left: auto;" es un truco de Flexbox para empujar ese elemento lo más a la
+                derecha posible.-->
             </ul>
         </nav>
 
@@ -46,9 +50,13 @@
                     <h2>Bienvenido a mi registro de aprendizaje</h2>
 
                     <p>Este sitio ha sido desarrollado para la materia <strong>Proyecto Integrador 1</strong>.</p>
-                    <p>No es solo un repositorio de archivos, sino un entorno de documentación activa donde registro la evolución de mis habilidades técnicas.</p>
-                
-                    <p>A través de la cursada en el ISSRC, este espacio se convertirá en mi base de conocimientos centralizada, permitiéndome repasar conceptos fundamentales de arquitectura web, protocolos de comunicación y buenas prácticas de desarrollo que aplicaré en mi carrera como Desarrollador Web."</p>
+                    <p>No es solo un repositorio de archivos, sino un entorno de documentación activa donde registro la
+                        evolución de mis habilidades técnicas.</p>
+
+                    <p>A través de la cursada en el ISSRC, este espacio se convertirá en mi base de conocimientos
+                        centralizada, permitiéndome repasar conceptos fundamentales de arquitectura web, protocolos de
+                        comunicación y buenas prácticas de desarrollo que aplicaré en mi carrera como Desarrollador
+                        Web."</p>
                 </div>
 
                 <!-- Tu nueva imagen de bienvenida -->
@@ -58,23 +66,69 @@
 
         <section>
             <h3>¿Qué encontrarás aquí?</h3>
-            <div class="content-flex">
-                <div class="flex-text">
+            <!-- Reemplazamos la lista por este contenedor -->
+            <div class="cards-container">
 
-                    <ul>
-                        <li><strong>Guía de Terminal:</strong> El primer contacto con el sistema. Aquí documento cómo gestionar archivos y procesos sin depender de una interfaz gráfica, una habilidad crítica para cualquier desarrollador y comandos básicos para moverte en el sistema.</li>
-                        <li><strong>Control de Versiones:</strong> Mi flujo de trabajo con Git y GitHub.La bitácora de mis proyectos. Registro el uso de Git para el control local y GitHub para la colaboración y el despliegue en la nube.</li>
-                        <li><strong>Fundamentos Web:</strong> Conceptos de HTML y la estructura de este sitio. El esqueleto de la red. Notas detalladas sobre semántica HTML5, asegurando que mis sitios sean accesibles y bien interpretados por los navegadores.</li>
-                        <li><strong>Herramientas:</strong> Un inventario del software que potencia mi productividad, desde editores de código hasta asistentes de IA y extensiones esenciales y el software que utilizo para programar.</li>
-                    </ul>
+                <div class="card">
+                    <h4>Guía de Terminal</h4>
+                    <p>Gestión de archivos y comandos básicos para moverte en el sistema sin interfaz gráfica.</p>
+                    <a href="terminal.html" class="card-btn">Ver apuntes</a>
                 </div>
-                <img src="assets/busqueda.png" alt="Aprendizaje" class="section-img">
+
+                <div class="card">
+                    <h4>Control de Versiones</h4>
+                    <p>Mi flujo de trabajo con Git y GitHub. La bitácora de mis proyectos y despliegue en la nube.</p>
+                    <a href="git.html" class="card-btn">Ver apuntes</a>
+                </div>
+
+                <div class="card">
+                    <h4>Fundamentos Web</h4>
+                    <p>Notas sobre semántica HTML5, asegurando sitios accesibles y bien interpretados.</p>
+                    <a href="html.html" class="card-btn">Ver apuntes</a>
+                </div>
+
+                <div class="card">
+                    <h4>Herramientas</h4>
+                    <p>Inventario del software que potencia mi productividad: VS Code, IA y extensiones.</p>
+                    <a href="software.html" class="card-btn">Ver apuntes</a>
+                </div>
+
             </div>
         </section>
     </main>
+
+    <section id="contacto">
+        <h3>Contacto y Sugerencias</h3>
+        <p>¿Tienes alguna duda sobre mi progreso? ¡Escríbeme!</p>
+
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué puedo ayudarte?"></textarea>
+            </div>
+
+            <button type="submit" class="card-btn">Enviar Mensaje</button>
+        </form>
+    </section>
+
     <footer>
         <p>&copy; 2026 Mauricio Nicolas Merlo - Estudiante de Desarrollo Web (ISSRC)</p>
     </footer>
+
+    <!-- Botón para volver arriba -->
+    <a href="#" class="btn-top">
+        <span class="arrow">↑</span>
+    </a>
 </body>
 
 </html>
